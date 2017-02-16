@@ -1,3 +1,8 @@
+/**
+GUI for the project using swing
+
+**/
+
 package Swing;
 
 import java.awt.event.ActionEvent;
@@ -18,11 +23,16 @@ import javax.swing.JTextField;
 import javax.swing.plaf.FileChooserUI;
 
 public class BaseJFrame extends JFrame implements MouseListener,ActionListener {
+	//Browsing file location menu
 	JFileChooser fc=new JFileChooser();
+	
+	//various button to interact
 	JButton browse = new JButton("Browse");
 	JButton encrypt = new JButton("Encrypt");
 	static private final String newline = "\n";
 	JTextField tf=new JTextField();
+	
+	//setting size of GUI window
 	public BaseJFrame() {
 		Cipher cipher;
 		final String pass = "password12345678";
@@ -30,6 +40,8 @@ public class BaseJFrame extends JFrame implements MouseListener,ActionListener {
 		
 		browse.addActionListener(this);
 		encrypt.setBounds(20, 20, 80, 30);
+		
+		//action method to response to several click events
 		encrypt.addActionListener(new ActionListener() {
 			
 			@Override
