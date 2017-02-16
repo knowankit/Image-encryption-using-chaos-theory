@@ -1,6 +1,6 @@
 
 /**
-AES encryption library
+AES encryption library.
 **/
 package Swing;
 
