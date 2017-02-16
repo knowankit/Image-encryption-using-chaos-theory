@@ -1,3 +1,7 @@
+
+/**
+AES encryption library.
+**/
 package Swing;
 
 import java.awt.image.BufferedImage;
