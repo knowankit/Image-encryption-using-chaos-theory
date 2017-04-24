@@ -1,58 +1,53 @@
 ## Image Encryption using Chaos theory
 
-###### This project deals with the encryption and decryption of the image using two logistic equation 
+This project deals with the encryption and decryption of the image using two logistic equation which is iterated in a loop at a certain number of times to genearte distinct value.The generated distinct value is used in key generatioan where it is further used in operations like XORing with the pixels.
 
-###### which is iterated in a loop at a certain number of times to genearte distinct value.The generated 
-
-###### distinct value is used in key generation where it is further used in operations like XORing with 
-
-###### the pixels.
-
-###### A separate Image analyzer tool is provided to do various kinds of analysis on the image.
-###### Analysis like NPCR,UACI,Correlation coefficient ,RMSE ,Histogram are integrated in this
-###### software .
+A separate Image analyzer tool is provided to do avarious kinds of analysis on the image.
+Analysis like NPCR,UACI,Correlation coefficient ,RMSE ,Histogram are integrated in this
+software .
 
 ### Prerequisites
-###### If you want to modify the code then you need to install any IDE for python like PyCharm
-###### This codes works on both python 2.7 and 3.2 version
+* If you want to modify the code then you need to install any IDE for python like PyCharm (optional)
+* This codes works on both python 2.7 and 3.2 version
 
 ### Installing
-###### Copy this project folder into your project workspace.Open the GUI.py file in the IDE
-###### You will get some errors as many libraries will be unavailable.Libraries required to
-###### run this code are matplotlib, pillow, numbpy, histogram, tkinter
+Copy this project folder into your project workspace. Open the GUI.py file in the IDE
+You will get some errors as many libraries will be unavailable. Libraries required to
+run this code are matplotlib, pillow, numbpy, histogram, tkinter
 
 ### Built With
-###### PycharmIDE
-###### Flask Framework
-###### Tkinter library
+* ##### Pycharm IDE
+* ###### matplotlib
+* ###### numpy
+* ###### Tkinter library
+* ###### pillow
 
 
 ### Author
-###### Ankit Kumar
+* ###### Ankit Kumar
+* ###### Aditya Prakash
+* ###### [Ghulam Khan](http://github.com/waynetech)
 
 ### License
-###### This project is free to use
+This project is free to use and modify
 
 ### Acknowledgments
-###### Special thanks to my mentor Ms.Supriya Khaitan ma'am
+Special thanks to our mentor **Ms.Supriya Khaitan** ma'am
 
 
+### Notes:
+* Allowed image formats are .jpeg and .png. User can select any of the mentioned image format.
 
-###### Allowed image formats are .jpeg and .png . User can can select any of the mentioned image formats 
+* User can use their own secret key to encrypt and decrypt the image. 
 
-###### file to do the operation.User can use their own key to encrypt and decrypt the image 
+* Encryption and decryption time of the image depends on the size and resolution of the image.
 
-###### file.Encryption and decryption of the image depends on the size and resolution of the image.
-
-###### This project also does the analysis of the images between encrypted and the original image.This 
-
-###### is done on the basis of the distribution of red, blue and green pixels.
+* This project also analyzes the encrypted and original images.
 
 ### Modules of this project-
 
-1. Encryption and Decryption
-2. Shuffling Of Pixels
-3. Image analyzer tool
-4. Web deployment
-4. Windows based application
+1. Chaos Module
+2. Image analyzer tool
+3. Web application
+4. Desktop application
 
