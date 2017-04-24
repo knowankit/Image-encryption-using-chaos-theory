@@ -1,9 +1,14 @@
+"""
+This is a desktop based GUI application. Libraries like tkinter,PIL have been used to make it.A user can encrypt or decrypt the image file
+from this gui.It have to modules encrypt and decrypt.This gui used grid layout which means size will remains same in every window.
+"""
 from tkinter import *
+#Imported from chaos package
 from Chaos.Encryption import encrypt
 from Chaos.Decryption import decrypt
-from histogram import redhistogram,bluehistogram,greenhistogram
-from tkinter import filedialog
-from PIL import ImageTk, Image
+
+from tkinter import filedialog #GUI library
+from PIL import ImageTk, Image #image manipulation library
 
 from os.path import getsize
 
@@ -31,7 +36,9 @@ def askopenfile():
     myvar.image = tkimage #assigning the image value
 
     myvar.grid(row=1, column=0) #Placing the image using grid layout
-
+"""
+Encrypt function has two parameters which are image object and secret key of 80 bits.Doencrypt is used to call the encrypt function.
+"""
 def doencrypt():
     loc=input_file_entry.get() #Fecthing the location of the file to be encrypted
     key=password_entry.get()  #Fetching the key value
@@ -44,13 +51,10 @@ def doencrypt():
     myvar.image = tkimage # Assigning the image attribute
     myvar.grid(row=1, column=1) #Placing the image using grid layout
 
-    #encrypted_image.show()
-   # encrypted_image = encrypted_image.resize((200, 200), Image.ANTIALIAS)
-   #  myvar2 = Label(root, image=encrypted_image)
-   #  myvar2.image = encrypted_image
-   #  myvar2.grid(row=1,column=1)
 
-
+"""
+Decrypt function has two parameters which are image object and secret key of 80 bits.Dodecrypt is used to call the decrypt function.
+"""
 def dodecrypt():
     loc="abc.png" #Location of decrypted iamge
     decrypted_image=decrypt(loc,password_entry.get()) #Calling decrypt function tod ecrypt the image by passing encryptd image with the key
