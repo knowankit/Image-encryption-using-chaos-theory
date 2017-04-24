@@ -16,7 +16,7 @@ You will get some errors as many libraries will be unavailable. Libraries requir
 run this code are matplotlib, pillow, numbpy, histogram, tkinter
 
 ### Built With
-* ##### Pycharm IDE
+* ###### Pycharm IDE
 * ###### matplotlib
 * ###### numpy
 * ###### Tkinter library
