@@ -3,7 +3,7 @@
 This project deals with the encryption and decryption of the image using two logistic equation which is iterated in a loop at a certain number of times to genearte distinct value.The generated distinct value is used in key generatioan where it is further used in operations like XORing with the pixels.
 
 A separate Image analyzer tool is provided to do avarious kinds of analysis on the image.
-Analysis like NPCR,UACI,Correlation coefficient ,RMSE ,Histogram are integrated in this
+Analysis like NPCR(Number Of Pixes Changed Rate),UACI(Unified Average Changed Intensity),Correlation coefficient ,RMSE(Root Mean Square Error) ,Histogram are integrated in this
 software .
 
 ### Prerequisites
