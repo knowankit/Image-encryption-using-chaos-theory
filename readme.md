@@ -31,9 +31,6 @@ run this code are matplotlib, pillow, numbpy, histogram, tkinter
 ### License
 This project is free to use and modify
 
-### Acknowledgments
-Special thanks to our mentor **Ms.Supriya Khaitan** ma'am
-
 
 ### Notes:
 * Allowed image formats are .jpeg and .png. User can select any of the mentioned image format.
