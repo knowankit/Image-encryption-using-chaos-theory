@@ -24,7 +24,7 @@ run this code are matplotlib, pillow, numbpy, histogram, tkinter
 
 
 ### Author
-* ###### Ankit Kumar
+* ###### [Ankit Kumar](http://github.com/knowankit)
 * ###### Aditya Prakash
 * ###### [Ghulam Khan](http://github.com/waynetech)
 
